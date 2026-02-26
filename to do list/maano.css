@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  padding: 40px 10px;
+  text-align:center;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 480px;
+  margin: auto;
+  background: #ffffff;
+  padding: 28px;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-align:center;
+}
+.melcam input{
+    display: flex;
+
+}
+.melcam button{
+  display:inline-block;
+
+
+}
+
+/* ===== Title ===== */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* ===== Input + Button row ===== */
+.container input {
+  width: 70%;
+  padding: 11px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background: #fafafa;
+  color: #333;
+  display: inline-block;
+}
+
+.container button {
+  width: 26%;
+  margin-left: 4%;
+  padding: 11px;
+  background-color: #3b82f6;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+ display: inline-block;
+}
+
+.container button:hover {
+  background-color: #2563eb;
+}
+
+/* ===== Section title ===== */
+.container h2 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+}
+
+/* ===== Product row ===== */
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 🔥 pushes icons right */
+  padding: 12px 0;
+}
+
+/* subtle divider like screenshot */
+.product-item:not(:last-child) {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* ===== Product name ===== */
+.product-name {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ===== Icons area ===== */
+.icons {
+  display: flex;
+  gap: 16px;
+  color: #555;
+}
+
+.icons span {
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+/* hover effects */
+.icons .edit:hover {
+  color: #2563eb;
+}
+
+.icons .delete:hover {
+  color: #dc2626;
+}

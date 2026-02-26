@@ -1,4 +1,21 @@
-* {
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* grows to fill space between navbar and footer */
+    display: flex;
+    flex-direction: column;
+}
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +35,7 @@ nav {
 .logo {
     color: white;
 }
+
 
 nav ul {
     list-style: none;
@@ -90,15 +108,13 @@ section {
 }
 
 
-footer {
-    
-    text-align: center;
-    padding: 20px;
-    background-color: #111;   /* optional */
-    color: white;
 
-    
-        
+.footer{
+ background-color: #f1f1f1;
+ 
+   background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 
 
@@ -130,38 +146,38 @@ footer {
 }
 
 .project-container {
-display:grid;
-grid-template-columns: repeat(3,1fr);
-gap:20px;
- margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
 }
 
 .project-card {
-  padding : 15px;
-  text-align:center;
-  border-radius:8px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
 }
-.project-card img{
-    width:100%;
-    border-radius:6px;
-    object-fit:cover;
-}
-.view-project {
-   margin-top: 15px;
-  padding: 10px 16px;
-  border: 2px solid #ccc;     
-  border-radius: 12px;        
-  display: inline-block;
 
-  color: #333;
-  cursor: pointer;
- 
+.project-card img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.view-project {
+    margin-top: 15px;
+    padding: 10px 16px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    display: inline-block;
+    color: #333;
+    cursor: pointer;
 }
 
 .view-project:hover {
-
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
+
 #about-skills {
   padding: 60px 10%;
 }
@@ -172,13 +188,13 @@ gap:20px;
   align-items: center;
 }
 
-/* Left & Right columns */
+
 .skills-left,
 .about-right {
   flex: 1;
 }
 
-/* Skills styling */
+
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -192,10 +208,67 @@ gap:20px;
   font-size: 14px;
 }
 
-/* About text */
+
 .about-right p {
   line-height: 1.6;
   font-size: 16px;
+}
+#last {
+  width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: rgb(171, 204, 204);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    gap: 20px;
+
+    min-height: 70vh;               /* space between h1, p, input, button */
+}
+
+#last h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#last p {
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+#last input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#last button {
+    padding: 10px 20px;
+    background-color: rgb(83, 77, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#last button:hover {
+    background-color: rgb(63, 57, 95);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    #last input {
+        width: 90%;
+    }
 }
 
 
